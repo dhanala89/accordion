@@ -29,7 +29,7 @@ class Panel extends Component {
         
     }
     dropdownPress() {
-	    LayoutAnimation.configureNext(LayoutAnimation.Presets.spring);
+	    LayoutAnimation.configureNext(LayoutAnimation.Presets.linear);
 	    if(this.state.isDropdownPressed){
             this.setState({
                 isDropdownPressed: false,
