@@ -22,12 +22,12 @@ module.exports = StyleSheet.create({
     },
     categoryContainer: {
         flex: 1,
-        top: 50,
-        marginLeft: 20,
-        marginRight: 20,
-        //width: width - 20,
-        borderBottomColor: 'gray',
-        borderBottomWidth: 1,
+        position: 'absolute',
+        top: 30,
+        paddingLeft: 20,
+        paddingTop: 30,
+        paddingBottom: 30,
+        width: width - 20,
     },
     category: {
         flex: 1,
@@ -37,7 +37,6 @@ module.exports = StyleSheet.create({
         paddingBottom: 20,
         borderTopColor: 'gray',
         borderTopWidth: 1,
-
     },
     categoryLeft: {
         flexDirection: 'row',
@@ -59,10 +58,10 @@ module.exports = StyleSheet.create({
         paddingRight: 40,
     },
     summaryGroups: {
-       // flex: 1,
+        flex: 1,
         flexDirection: 'row',        
         justifyContent: 'space-between',
-       // paddingTop: 10,
+        paddingTop: 10,
         paddingBottom: 10,
     },
     summaryGroupsLeft: {

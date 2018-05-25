@@ -13,6 +13,7 @@ import {
 } from 'react-native';
 
 import styles from '../styles/Accordion';
+import * as LayoutAnimation from "react-native/Libraries/LayoutAnimation/LayoutAnimation";
 const {width, height} = Dimensions.get('window');
 
 class SubGroup extends Component {
@@ -27,6 +28,7 @@ class SubGroup extends Component {
         
     }
     dropdownPress() {
+	    LayoutAnimation.configureNext(LayoutAnimation.Presets.spring);
         if(this.state.isDropdownPressed){
             this.setState({
                 isDropdownPressed: false,
